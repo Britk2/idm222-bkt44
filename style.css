@@ -1,0 +1,258 @@
+@import "normal.css";
+@import "fonts.css";
+
+html{
+    background-color: lavender;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:100%;
+    margin: auto;
+    max-width: 28.125rem;
+}
+
+body{
+    margin: auto;
+}
+
+.contain{
+    background-color: ghostwhite;
+    border: 2.5px solid lavender;
+    margin: .75rem;
+    outline:2.5px solid ghostwhite;
+}
+
+a{
+    text-decoration: none;
+}
+
+header .logo{
+    left:0;
+    position: relative;
+    top:.25rem;
+}
+
+header .logo img{
+    width: 6rem;
+}
+header .logo a{
+    margin:0;
+    padding:0 0 1rem 0;
+}
+
+header{
+    color:rgb(90, 63, 90);
+    font-family: roboto_condensed, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: .25rem 0;
+}
+
+
+/*For home page*/
+#introduction{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: thin;
+    padding: 1rem;
+}
+#introduction h6{
+    text-align: center;
+}
+
+/*site wide*/
+p{
+    padding: 1rem;
+    text-indent: 2rem; 
+    line-height: 2;
+}
+
+dd{
+    line-height: 2;
+}
+
+h1, h2, h4, h6, .res a, .ux_h a, .hp a, .portfolio_h a, .abt a, .cnt a, .arduino_h a, .logo_h a, .portfolio_h a{
+    color:rgb(90, 63, 90);
+}
+
+.res, .ux_h, .hp, .portfolio_h, .abt, .cnt, .arduino_h, .logo_h, .portfolio_h{
+    text-align: center;
+    font-family: roboto_condensed, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: ghostwhite;
+    border-bottom: 1px solid gainsboro;
+    padding: .5rem 0 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 25;
+    margin: 0;
+}
+
+
+img, video{
+    max-width: 100%;    
+}
+
+.github, .yt{
+    width:50px;
+    height:50px;
+}
+.yt{
+    position: relative;
+    top:.5rem;
+}
+/*About page*/
+.me_p{
+    padding: 0 2rem;
+}
+/*contact page*/
+.contact h4, .socialmedia{
+    color: darkslateblue;
+    margin:1rem;
+}
+
+.c_c{
+    padding: 0 1rem;
+}
+
+/*resume*/
+.resume{
+    font-size: .75rem;
+    padding: 1rem;
+}
+
+.basic_info, .resume h2, .resume h4{
+    text-align: center;
+}
+
+.resume div, .resume div dt, .resume div dd{
+    padding-bottom: .5rem;
+    line-height: 2;
+}
+
+.resume .education ul li{
+    list-style: none;
+}
+
+.accomplishments li{
+    line-height: 2;
+}
+
+.cat{
+    list-style: none;
+    padding:.5rem 0;
+}
+
+.skill li{
+    line-height: 1.5;
+}
+
+.skill{
+    padding-top: 1rem;
+}
+
+/*Portfolio Page*/
+.portfolio img{
+    opacity: .35;
+    width: 100%;
+}
+
+.portfolio_l img, .portfolio_l svg{
+    width: 100%;
+}
+
+.portfolio_l h1, .portfolio_l h2, .portfolio_l h3, .portfolio_l h4, .portfolio_l h5, .portfolio_l h6, .portfolio_a h1, .portfolio_ux h1, .portfolio_ux h3, .top{
+    text-align: center;
+}
+
+.portfolio h2{
+    font-family: roboto_condensed, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 1rem 0;
+    text-shadow: 2px 2px darkgray;
+}
+
+.arduino h2, .ux h2, .portfolio .logo h2, .photo h2{
+    font-size: 1.125rem;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    z-index: 10;
+}
+
+.phoenix p a{
+    text-decoration: underline;
+}
+
+.portfolio .logo, .ux, .arduino, .photo{
+    position: relative;
+}
+
+/*ai & photo page*/
+.portfolio_l .logos{
+    left: 2.5%;
+    position: relative;
+    width: 95%;
+}
+/*ux page*/
+.yale{
+    border-bottom: 1px solid gainsboro;
+}
+.portfolio_ux p{
+    padding: 0 2rem;
+}
+
+/*3d & hands on page*/
+.portfolio_a p{
+    padding: 0 2rem;
+}
+.stool h3{
+    text-align: center;
+}
+/*menu navigation*/
+nav{
+    background: ghostwhite;
+    border-bottom: 1px solid gainsboro;
+    font-family: roboto_condensed, Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    font-weight: bold;
+    line-height: 0;
+    margin: 0;
+    padding: .5rem 1rem;
+    text-align: justify;
+  }
+
+nav ul li {
+    list-style: none;
+    line-height: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul li a{
+    padding: .75rem .75rem;
+}
+
+/*Pic on the about page*/
+#me p{
+    padding:1rem;
+}
+.me img{
+    width: 100%;
+}
+/* CSS stuff for the social media tabs */
+.social ul{
+    list-style:none;
+    padding: 0;
+    
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.social ul li{
+    padding: 1rem;
+}
