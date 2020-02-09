@@ -1,12 +1,33 @@
 @import "normal.css";
 @import "fonts.css";
 
+:root{
+    --off-white: #ffffff;
+    --light-grey: #f5f5f5;
+    --grey-line: #cccccc;
+    --light-p:#deddef;
+    --dark-p:#55425b;
+    --vibe-p:#57408e;
+    --off-black:#272425;
+
+    --b-back: var(--light-p);
+    --f-back: var(--off-white);
+    --t-color: var(--off-black);
+    --h-color: var(--dark-p);
+    --d-line: var(--grey-line);
+    --m-color: var(--light-grey);
+
+    --p-t-f: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --h-t-f: roboto_condensed, Arial, Helvetica, sans-serif;
+
+}
+
 html{
-    background-color: lavender;
+    background-color: var(--b-back);
+    color: var(--t-color);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:100%;
     margin: auto;
-    max-width: 28.125rem;
 }
 
 body{
@@ -14,10 +35,10 @@ body{
 }
 
 .contain{
-    background-color: ghostwhite;
-    border: 2.5px solid lavender;
+    background-color: var(--f-back);
+    border: 2.5px solid var(--b-back);
     margin: .75rem;
-    outline:2.5px solid ghostwhite;
+    outline:2.5px solid var(--f-back);
 }
 
 a{
@@ -30,7 +51,7 @@ header .logo{
     top:.25rem;
 }
 
-header .logo img{
+header .logo svg, header .logo img{
     width: 6rem;
 }
 header .logo a{
@@ -39,8 +60,7 @@ header .logo a{
 }
 
 header{
-    color:rgb(90, 63, 90);
-    font-family: roboto_condensed, Arial, Helvetica, sans-serif;
+    color:var(--h-color);
     font-weight: bold;
     text-align: center;
     padding: .25rem 0;
@@ -49,7 +69,6 @@ header{
 
 /*For home page*/
 #introduction{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: thin;
     padding: 1rem;
@@ -70,15 +89,15 @@ dd{
 }
 
 h1, h2, h4, h6, .res a, .ux_h a, .hp a, .portfolio_h a, .abt a, .cnt a, .arduino_h a, .logo_h a, .portfolio_h a{
-    color:rgb(90, 63, 90);
+    color:var(--h-color);
 }
 
 .res, .ux_h, .hp, .portfolio_h, .abt, .cnt, .arduino_h, .logo_h, .portfolio_h{
     text-align: center;
-    font-family: roboto_condensed, Arial, Helvetica, sans-serif;
+    font-family: var(--h-t-f);
     font-weight: bold;
-    background: ghostwhite;
-    border-bottom: 1px solid gainsboro;
+    background-color: var(--f-back);
+    border-bottom: 1px solid var(--d-line);
     padding: .5rem 0 1rem 0;
     position: sticky;
     top: 0;
@@ -87,7 +106,7 @@ h1, h2, h4, h6, .res a, .ux_h a, .hp a, .portfolio_h a, .abt a, .cnt a, .arduino
 }
 
 
-img, video{
+img, video, svg{
     max-width: 100%;    
 }
 
@@ -104,14 +123,14 @@ img, video{
     padding: 0 2rem;
 }
 /*contact page*/
-.contact h4, .socialmedia{
+/* .contact h4, .socialmedia{
     color: darkslateblue;
     margin:1rem;
 }
 
 .c_c{
     padding: 0 1rem;
-}
+} */
 
 /*resume*/
 .resume{
@@ -119,16 +138,27 @@ img, video{
     padding: 1rem;
 }
 
-.basic_info, .resume h2, .resume h4{
+.basic_info, .resume h2, .resume h4, .portfolio_l h1, .portfolio_l h2, .portfolio_l h3, .portfolio_l h4, .portfolio_l h5, .portfolio_l h6, .portfolio_a h1, .portfolio_ux h1, .portfolio_ux h3, .top, .stool h3{
     text-align: center;
 }
 
 .resume div, .resume div dt, .resume div dd{
-    padding-bottom: .5rem;
-    line-height: 2;
+    padding-top: .75rem;
+    line-height: 1.5;
 }
 
-.resume .education ul li{
+.resume h2,  .resume h4{
+    padding-top: 1rem;
+    padding-bottom:0;
+    margin:0;
+}
+.resume h4{
+    padding-top: .5rem;
+}
+.resume dl, .accomplishments ul, .skill ul, .school h5{
+    margin: .5rem 0 .25rem 0;
+}
+.resume .education ul li, .cat{
     list-style: none;
 }
 
@@ -137,7 +167,6 @@ img, video{
 }
 
 .cat{
-    list-style: none;
     padding:.5rem 0;
 }
 
@@ -152,22 +181,20 @@ img, video{
 /*Portfolio Page*/
 .portfolio img{
     opacity: .35;
-    width: 100%;
 }
 
-.portfolio_l img, .portfolio_l svg{
-    width: 100%;
-}
-
-.portfolio_l h1, .portfolio_l h2, .portfolio_l h3, .portfolio_l h4, .portfolio_l h5, .portfolio_l h6, .portfolio_a h1, .portfolio_ux h1, .portfolio_ux h3, .top{
-    text-align: center;
-}
+/* .portfolio main{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+} */
 
 .portfolio h2{
-    font-family: roboto_condensed, Arial, Helvetica, sans-serif;
+    font-family: var(--h-t-f);
     font-weight: bold;
     padding: 1rem 0;
-    text-shadow: 2px 2px darkgray;
+    text-shadow: 2px 2px var(--m-color);
 }
 
 .arduino h2, .ux h2, .portfolio .logo h2, .photo h2{
@@ -196,24 +223,17 @@ img, video{
 }
 /*ux page*/
 .yale{
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid var(--d-line);
 }
-.portfolio_ux p{
+.portfolio_ux p, .portfolio_a p{
     padding: 0 2rem;
 }
 
-/*3d & hands on page*/
-.portfolio_a p{
-    padding: 0 2rem;
-}
-.stool h3{
-    text-align: center;
-}
 /*menu navigation*/
 nav{
-    background: ghostwhite;
-    border-bottom: 1px solid gainsboro;
-    font-family: roboto_condensed, Arial, Helvetica, sans-serif;
+    background: var(--m-color) ;
+    border-bottom: 1px solid var(--d-line);
+    font-family: var(--h-t-f);
 }
 
 nav ul {
