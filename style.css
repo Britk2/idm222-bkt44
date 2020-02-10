@@ -30,9 +30,7 @@ html{
     margin: auto;
 }
 
-body{
-    margin: auto;
-}
+body{margin: auto;}
 
 .contain{
     background-color: var(--f-back);
@@ -41,9 +39,7 @@ body{
     outline:2.5px solid var(--f-back);
 }
 
-a{
-    text-decoration: none;
-}
+a{text-decoration: none;}
 
 header .logo{
     left:0;
@@ -51,9 +47,7 @@ header .logo{
     top:.25rem;
 }
 
-header .logo svg, header .logo img{
-    width: 6rem;
-}
+header .logo svg, header .logo img{width: 6rem;}
 header .logo a{
     margin:0;
     padding:0 0 1rem 0;
@@ -73,9 +67,7 @@ header{
     font-weight: thin;
     padding: 1rem;
 }
-#introduction h6{
-    text-align: center;
-}
+#introduction h6{text-align: center;}
 
 /*site wide*/
 p{
@@ -84,13 +76,9 @@ p{
     line-height: 2;
 }
 
-dd{
-    line-height: 2;
-}
+dd{line-height: 2;}
 
-h1, h2, h4, h6, .res a, .ux_h a, .hp a, .portfolio_h a, .abt a, .cnt a, .arduino_h a, .logo_h a, .portfolio_h a{
-    color:var(--h-color);
-}
+h1, h2, h4, h6, .res a, .ux_h a, .hp a, .portfolio_h a, .abt a, .cnt a, .arduino_h a, .logo_h a, .portfolio_h a{color:var(--h-color);}
 
 .res, .ux_h, .hp, .portfolio_h, .abt, .cnt, .arduino_h, .logo_h, .portfolio_h{
     text-align: center;
@@ -106,9 +94,7 @@ h1, h2, h4, h6, .res a, .ux_h a, .hp a, .portfolio_h a, .abt a, .cnt a, .arduino
 }
 
 
-img, video, svg{
-    max-width: 100%;    
-}
+img, video, svg{max-width: 100%;}
 
 .github, .yt{
     width:50px;
@@ -119,9 +105,7 @@ img, video, svg{
     top:.5rem;
 }
 /*About page*/
-.me_p{
-    padding: 0 2rem;
-}
+.me_p{padding: 0 2rem;}
 /*contact page*/
 /* .contact h4, .socialmedia{
     color: darkslateblue;
@@ -138,9 +122,7 @@ img, video, svg{
     padding: 1rem;
 }
 
-.basic_info, .resume h2, .resume h4, .portfolio_l h1, .portfolio_l h2, .portfolio_l h3, .portfolio_l h4, .portfolio_l h5, .portfolio_l h6, .portfolio_a h1, .portfolio_ux h1, .portfolio_ux h3, .top, .stool h3{
-    text-align: center;
-}
+.basic_info, .resume h2, .resume h4, .portfolio_l h1, .portfolio_l h2, .portfolio_l h3, .portfolio_l h4, .portfolio_l h5, .portfolio_l h6, .portfolio_a h1, .portfolio_ux h1, .portfolio_ux h3, .top, .stool h3{text-align: center;}
 
 .resume div, .resume div dt, .resume div dd{
     padding-top: .75rem;
@@ -152,51 +134,26 @@ img, video, svg{
     padding-bottom:0;
     margin:0;
 }
-.resume h4{
-    padding-top: .5rem;
-}
-.resume dl, .accomplishments ul, .skill ul, .school h5{
-    margin: .5rem 0 .25rem 0;
-}
-.resume .education ul li, .cat{
-    list-style: none;
-}
 
-.accomplishments li{
-    line-height: 2;
-}
-
-.cat{
-    padding:.5rem 0;
-}
-
-.skill li{
-    line-height: 1.5;
-}
-
-.skill{
-    padding-top: 1rem;
-}
+.resume h4{padding-top: .5rem;}
+.resume dl, .accomplishments ul, .skill ul, .school h5{margin: .5rem 0 .25rem 0;}
+.resume .education ul li, .cat{list-style: none;}
+.accomplishments li{line-height: 2;}
+.cat{padding:.5rem 0;}
+.skill li{line-height: 1.5;}
+.skill{padding-top: 1rem;}
 
 /*Portfolio Page*/
-.portfolio img{
-    opacity: .35;
-}
-
-/* .portfolio main{
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: start;
-    align-items: center;
-} */
+.portfolio img{opacity: .35;}
 
 .portfolio h2{
     font-family: var(--h-t-f);
     font-weight: bold;
-    padding: 1rem 0;
     text-shadow: 2px 2px var(--m-color);
 }
 
+.portfolio ul{list-style: none;padding:0;}
+.portfolio main{margin: 0;}
 .arduino h2, .ux h2, .portfolio .logo h2, .photo h2{
     font-size: 1.125rem;
     left: 0;
@@ -207,13 +164,8 @@ img, video, svg{
     z-index: 10;
 }
 
-.phoenix p a{
-    text-decoration: underline;
-}
-
-.portfolio .logo, .ux, .arduino, .photo{
-    position: relative;
-}
+.phoenix p a{text-decoration: underline;}
+.portfolio .logo, .ux, .arduino, .photo{position: relative;}
 
 /*ai & photo page*/
 .portfolio_l .logos{
@@ -222,12 +174,8 @@ img, video, svg{
     width: 95%;
 }
 /*ux page*/
-.yale{
-    border-bottom: 1px solid var(--d-line);
-}
-.portfolio_ux p, .portfolio_a p{
-    padding: 0 2rem;
-}
+.yale{border-bottom: 1px solid var(--d-line);}
+.portfolio_ux p, .portfolio_a p{padding: 0 2rem;}
 
 /*menu navigation*/
 nav{
@@ -251,28 +199,46 @@ nav ul li {
     padding: 1rem;
 }
 
-nav ul li a{
-    padding: .75rem .75rem;
-}
+nav ul li a{padding: .75rem .75rem;}
 
 /*Pic on the about page*/
-#me p{
-    padding:1rem;
-}
-.me img{
-    width: 100%;
-}
+#me p{padding:1rem;}
+.me img{width: 100%;}
 /* CSS stuff for the social media tabs */
 .social ul{
     list-style:none;
     padding: 0;
     
-    display:flex;
-    flex-flow: row wrap;
+    display:grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+    gap: 3rem 6rem;
+
     justify-content: center;
-    align-content: space-around;
+    align-content: center;
 }
 
-.social ul li{
-    padding: 1rem;
+.portfolio li::marker{
+    display: none;
+}
+
+/*For Tablets*/
+
+@media screen and (min-width:31rem){
+    .portfolio ul{
+        max-width: 25rem;
+        display: grid;
+        grid-template-columns: 15rem 15rem;
+        grid-template-rows: 9rem 9rem;
+        padding:0;
+        gap: 1rem 2rem;
+    }
+    .portfolio main{
+        margin: 0;
+        padding-bottom: 3rem;
+    }
+
+
+    .social ul{display: flex; justify-content: space-between;}
+
 }
