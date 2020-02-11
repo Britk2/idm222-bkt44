@@ -34,9 +34,9 @@ body{margin: auto;}
 
 .contain{
     background-color: var(--f-back);
-    border: 2.5px solid var(--b-back);
+    border: 5px solid var(--b-back);
     margin: .75rem;
-    outline:2.5px solid var(--f-back);
+    outline:5px solid var(--f-back);
 }
 
 a{text-decoration: none;}
@@ -105,7 +105,8 @@ img, video, svg{max-width: 100%;}
     top:.5rem;
 }
 /*About page*/
-.me_p{padding: 0 2rem;}
+.me_p{padding: 2rem;}
+
 /*contact page*/
 /* .contact h4, .socialmedia{
     color: darkslateblue;
@@ -202,12 +203,13 @@ nav ul li {
 nav ul li a{padding: .75rem .75rem;}
 
 /*Pic on the about page*/
-#me p{padding:1rem;}
 .me img{width: 100%;}
+
+
 /* CSS stuff for the social media tabs */
 .social ul{
     list-style:none;
-    padding: 0;
+    padding: 2rem 0;
     
     display:grid;
     grid-template-columns: 50px 50px;
@@ -224,21 +226,66 @@ nav ul li a{padding: .75rem .75rem;}
 
 /*For Tablets*/
 
-@media screen and (min-width:31rem){
+@media screen and (min-width:37.5rem){
+    html{
+        box-sizing: border-box;
+    }
+
     .portfolio ul{
-        max-width: 25rem;
+        width:100%;
         display: grid;
-        grid-template-columns: 15rem 15rem;
-        grid-template-rows: 9rem 9rem;
+        grid-template-columns: 50% 50%;
         padding:0;
-        gap: 1rem 2rem;
     }
-    .portfolio main{
+    .portfolio .arduino, .portfolio .ux, .portfolio .logo, .portfolio .photo{
+        justify-self: stretch;
+    }
+
+    .portfolio .logo{
+        height:79.125%;
+        background-color: #D1D3D4;
+    }
+    .portfolio .logo img{
+        height: 100%;
+        position: relative;
+        left: 10%;
+    }
+
+    .social ul{
+        display: flex;
+        justify-content: space-around;
+        padding:1rem;
+    }
+    
+    .me{
+        display:grid;
+        grid-template-columns: 40% 60%;
+        justify-content: stretch;
+        padding-top: 1rem;
+    }
+    .me_img{margin: 1rem;}
+    .me_p{
         margin: 0;
-        padding-bottom: 3rem;
+        line-height: 1.5;
+        padding:1rem;
     }
 
+    .skill, .skill .cat{padding-bottom: 1rem;}
+    .skill ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: start;
+    }
+    .skill ul li{
+        padding: 0 2rem;
+    }
 
-    .social ul{display: flex; justify-content: space-between;}
-
+    .education .accomplishments ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    .education .accomplishments ul li{
+        padding:0 2rem;
+    }
 }
