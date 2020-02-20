@@ -10,16 +10,26 @@
     --vibe-p:#57408e;
     --off-black:#272425;
 
-    --b-back: var(--light-p);
-    --f-back: var(--off-white);
-    --t-color: var(--off-black);
-    --h-color: var(--dark-p);
-    --d-line: var(--grey-line);
-    --m-color: var(--light-grey);
+    --b-back: var(--light-p); /* background */
+    --f-back: var(--off-white); /* contain-background */
+    --t-color: var(--off-black); /* text-color */
+    --h-color: var(--dark-p); /* heading-color */
+    --d-line: var(--grey-line); /* divide line */
+    --m-color: var(--light-grey); /* menu-background */
 
     --p-t-f: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --h-t-f: roboto_condensed, Arial, Helvetica, sans-serif;
 
+}
+
+@media (prefers-color-scheme: dark){
+    html{
+        filter: invert(100%);
+    }
+
+    img,video,svg{filter: invert(100%);}
+
+    .social{filter:invert(100%);}
 }
 
 html{
@@ -28,6 +38,7 @@ html{
     color: var(--t-color);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:100%;
+    line-height: 1.5;
     margin: auto;
 }
 
@@ -237,6 +248,10 @@ nav ul li a{padding: .75rem .75rem;}
 /*For Tablets*/
 
 @media screen and (min-width:37.5rem){
+    html{
+        font-size: 125%;
+        line-height: 1.5;
+    }
     .portfolio ul{
         width:100%;
         display: grid;
@@ -348,10 +363,15 @@ nav ul li a{padding: .75rem .75rem;}
 }
 
 @media screen and (min-width: 74rem){
+    html{
+        font-size: 150%;
+        line-height: 1.5;
+    }
     .w_s{
         display: flex;
     }
     video{
         width:50%
     }
+
 }
