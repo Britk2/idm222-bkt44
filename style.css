@@ -22,7 +22,7 @@
 
 }
 
-@media (prefers-color-scheme: dark){
+/* @media (prefers-color-scheme: dark){
     html{
         filter: invert(100%);
     }
@@ -30,7 +30,7 @@
     img,video,svg{filter: invert(100%);}
 
     .social{filter:invert(100%);}
-}
+} */
 
 html{
     box-sizing: border-box;
@@ -198,6 +198,8 @@ img, video, svg{max-width: 100%;}
 /*ux page*/
 .yale{border-bottom: 1px solid var(--d-line);}
 .portfolio_ux p, .portfolio_a p{padding: 0 2rem;}
+.project{text-align: center; box-shadow: var(--off-black);}
+.project a{text-align: center; background-color: var(--light-grey); padding:1rem; margin-top: 1rem;}
 
 /*menu navigation*/
 nav{
