@@ -111,7 +111,7 @@ h1, h2, h4, h6, .res a, .ux_h a, .hp a, .portfolio_h a, .abt a, .cnt a, .arduino
 }
 
 
-img, video, svg{max-width: 100%;}
+img, video, svg{max-width: 95%; padding-bottom:1rem;}
 
 .github, .yt{
     width:50px;
@@ -122,17 +122,17 @@ img, video, svg{max-width: 100%;}
     top:.5rem;
 }
 /*About page*/
-.me_p{padding: 2rem;}
+.me_p{padding: 1rem;}
 
 /*contact page*/
-/* .contact h4, .socialmedia{
-    color: darkslateblue;
+.contact h4, .socialmedia{
+    color: var(--h-color);
     margin:1rem;
 }
 
 .c_c{
     padding: 0 1rem;
-} */
+}
 
 /*resume*/
 .resume{
@@ -162,7 +162,11 @@ img, video, svg{max-width: 100%;}
 .skill{padding-top: 1rem;}
 
 /*Portfolio Page*/
-.portfolio img{opacity: .35;}
+.portfolio img{
+    opacity: .35;
+    display:block;
+    margin: auto;
+}
 
 .portfolio h2{
     font-family: var(--h-t-f);
@@ -171,7 +175,7 @@ img, video, svg{max-width: 100%;}
 }
 
 .portfolio ul{list-style: none;padding:0;}
-.portfolio main{margin: 0;}
+.portfolio main{margin:0 .5rem;}
 .arduino h2, .ux h2, .portfolio .logo h2, .photo h2{
     font-size: 1.125rem;
     left: 0;
@@ -200,6 +204,10 @@ img, video, svg{max-width: 100%;}
 
 .a{
     border-bottom: 1px solid var(--d-line);
+}
+
+.contain img{
+    width: 90%;
 }
 
 /*ux page*/
@@ -261,29 +269,16 @@ nav ul li a{padding: .75rem .75rem;}
         font-size: 150%;
         line-height: 1.5;
     }
-    .portfolio ul{
-        width:100%;
-        display: grid;
-        grid-template-columns: 48% 48%;
-        /* grid-template-rows: 40% 30%; */
-        padding:0;
-        justify-content: center;
-    }
-    .portfolio{
-        margin: 0 auto;
-    }
-    #ux, #ard, #photo{
-        justify-self: center;
+    .portfolio, .portfolio img{
+        width:90%;
+        display: block;
+        margin: auto;
     }
 
-    .portfolio .logo{
-        height:79.125%;
-        background-color: #D1D3D4;
-    }
-    .portfolio .logo img{
-        height: 100%;
-        position: relative;
-        left: 10%;
+    #water{
+        width:92%;
+        display: block;
+        margin: auto;
     }
 
     .social ul{
@@ -295,23 +290,6 @@ nav ul li a{padding: .75rem .75rem;}
     .social{
         display: flex;
         justify-content: center;
-    }
-    
-    .me{
-        display:grid;
-        grid-template-columns: 40% 60%;
-        justify-content: stretch;
-        padding-top: 1rem;
-    }
-    .me_img{margin: 1rem;}
-    .me_p{
-        margin: 0;
-        line-height: 1.5;
-        padding:0 1rem;
-    }
-    .me_p p{
-        margin: 0;
-        padding:2rem 0 1rem 0;
     }
 
     .education .accomplishments ul{
@@ -347,16 +325,30 @@ nav ul li a{padding: .75rem .75rem;}
     }
 }
 
+/*for large size*/
+
 @media screen and (min-width: 74rem){
     html{
         font-size: 175%;
         line-height: 1.5;
     }
-    .w_s{
-        display: flex;
+    .w_s{display: flex;}
+
+    .me{
+        display:grid;
+        grid-template-columns: 40% 60%;
+        justify-content: stretch;
+        padding-top: 1rem;
     }
-    video{
-        width:50%
+    .me_img{margin: 1rem;}
+    .me_p{
+        margin: 0;
+        line-height: 1.5;
+        padding:0 1rem;
+    }
+    .me_p p{
+        margin: 0;
+        padding:2rem 0 1rem 0;
     }
 
     .skill, .skill .cat{padding-bottom: 1rem;}
@@ -367,24 +359,35 @@ nav ul li a{padding: .75rem .75rem;}
         justify-content: center;
         padding:0;
     }
-    #cat li{
-        padding:0 .5rem;
-    }
-    li.space{
-        padding:0;
-    }
+    #cat li{padding:0 .5rem;}
+    li.space{padding:0;}
     .sub_cat{
         display:flex;
         flex-flow: column wrap;
     }
-    /* .skill ul li{
-        padding: 0 2rem;
-    } */
-
     .resume{
         width: 75ch;
         margin: auto;
     }
+
+    .portfolio{
+        width:30rem;
+    }
+    #ard, #logo{
+        position: relative;
+        right:25%;
+    }
+    #ux, #photo{
+        position: relative;
+        left:25%;
+    }
+
+    /* 
+        add a div and a flex box
+
+        #water, .a img{
+        width:50%;
+    } */
 
     dt{
         position: relative;
