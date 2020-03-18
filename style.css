@@ -122,7 +122,11 @@ img, video, svg{max-width: 95%; padding-bottom:1rem;}
     top:.5rem;
 }
 /*About page*/
-.me_p{padding: 1rem;}
+.me_p{padding: .25rem;}
+.me img{
+    display: block;
+    margin: auto;
+}
 
 /*contact page*/
 .contact h4, .socialmedia{
@@ -280,12 +284,18 @@ nav ul li a{padding: .75rem .75rem;}
         display: block;
         margin: auto;
     }
+    .me img{width:50%;}
 
     .social ul{
         display: flex;
-        justify-content: space-around;
-        padding:1rem;
+        justify-content: center;
+        padding:.5rem;
         width: 90%;
+    }
+    .social img{ padding:0;}
+    .yt{
+        position: relative;
+        top:.25rem;
     }
     .social{
         display: flex;
