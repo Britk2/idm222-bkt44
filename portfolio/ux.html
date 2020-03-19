@@ -12,10 +12,10 @@
         <header>
             <a href="#top"></a>
             <div class="logo">
-                <a href="../index.html">
+                <a href="http://btudesign.com/">
                     <picture>
-                        <source srcset="../pics/initials_logo.svg 1x, ../pics/cn_logo.svg 2x"/>
-                        <img srcset="../pics/initials_logo.png 1x, ../pics/cn_logo.png 2x" src="../pics/initials_logo.png" alt="logo"/> 
+                        <source srcset="../pics/logo.svg" />
+                        <img src="../pics/logo.png" alt="logo" />
                     </picture>
                 </a>
             </div>
@@ -36,8 +36,10 @@
                 <div class="ffxiv">
                     <br>
                     <h1>FFXIV Zodiac</h1>
-                    <img src="../pics/zodiac-home.png" alt="ffxiv zodiac home">
-                    <img src="../pics/zodiac-main.png" alt="ffxiv zodiac main">
+                    <div id="ffxiv_s">
+                        <img src="../pics/zodiac-home.png" alt="ffxiv zodiac home">
+                        <img src="../pics/zodiac-main.png" alt="ffxiv zodiac main">
+                    </div>
                     <p>Find out what your Final Fantasy XIV Job is based on your birthday! You can either choose to explore each of the jobs by pressing one of the 12 icons that is provided OR enter your birthdate at the top of your screen and see what you get!</p>
                     <p class="project">
                         <a href="http://btudesign.com/zodiac/" target="_blank">View Project</a>
@@ -46,10 +48,16 @@
                 <div class="pup_il">
                     <br>
                     <h1>Pup-il</h1>
-                    <img src="../pics/pupil_m_n.png" alt="pupil mobile normal">
-                    <img src="../pics/pupil_m_f.png" alt="pupil mobile filter">
-                    <img src="../pics/pupil_d_n.png" alt="pupil desktop normal">
-                    <img src="../pics/pupil_d_f.png" alt="pupil desktop filter">
+                    <div id="pupil">
+                        <div id="pMobile">
+                            <img src="../pics/pupil_m_n.png" alt="pupil mobile normal">
+                            <img src="../pics/pupil_m_f.png" alt="pupil mobile filter">
+                        </div>
+                        <div id="pDesk">
+                            <img src="../pics/pupil_d_n.png" alt="pupil desktop normal">
+                            <img src="../pics/pupil_d_f.png" alt="pupil desktop filter">
+                        </div>
+                    </div>
                     <ul>
                         <li>Logo Design: Fiona Tran</li>
                         <li>Web Development: Britney Tu</li>
@@ -68,25 +76,27 @@
                         This was for a project for a class called User Interface Design II. For the project, we are to choose a website to redesign for the purpose of responsive web. I decided to redesign Yale’s School of Art website since it didn’t have this support. Responsive web design is about designing a website to look good on all different sizes (in this case mobile phones, tablets, and desktop computers). The following showcases a video going through each of the platforms of the redesign. Below that is some of the process I went through to create the final product.
                     </p>
                     <br>
-                    <div class="yale_mobile">
-                        <h3>Mobile</h3>
-                        <video controls preload>
-                            <source src="../video/yale_mobile.mp4" type="video/mp4" />
-                            <source src="../video/yale_mobile.webm" type="video/webm" />
-                            <source src="../video/yale_mobile.ogv" type="video/ogv" />
-                        </video>
+                    <div id="sm_med">
+                        <div id="yale_mobile">
+                            <h3>Mobile</h3>
+                            <video controls preload>
+                                <source src="../video/yale_mobile.mp4" type="video/mp4" />
+                                <source src="../video/yale_mobile.webm" type="video/webm" />
+                                <source src="../video/yale_mobile.ogv" type="video/ogv" />
+                            </video>
+                        </div>
+                        <br>
+                        <div id="yale_tablet">
+                            <h3>Tablet</h3>
+                            <video controls preload>
+                                <source src="../video/yale_tablet.mp4" type="video/mp4" />
+                                <source src="../video/yale_tablet.webm" type="video/webm" />
+                                <source src="../video/yale_tablet.ogv" type="video/ogv" />
+                            </video>
+                        </div>
                     </div>
                     <br>
-                    <div class="yale_tablet">
-                        <h3>Tablet</h3>
-                        <video controls preload>
-                            <source src="../video/yale_tablet.mp4" type="video/mp4" />
-                            <source src="../video/yale_tablet.webm" type="video/webm" />
-                            <source src="../video/yale_tablet.ogv" type="video/ogv" />
-                        </video>
-                    </div>
-                    <br>
-                    <div class="yale_desktop">
+                    <div id="yale_desk">
                         <h3>Desktop</h3>
                         <video controls preload>
                             <source src="../video/yale_desk.mp4" type="video/mp4" />

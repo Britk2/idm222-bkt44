@@ -47,6 +47,7 @@ html{
     font-size:100%;
     line-height: 1.5;
     margin: auto;
+    display: block;
 }
 
 .contain{
@@ -88,7 +89,7 @@ header{
 
 /*site wide*/
 p{
-    padding: 1rem;
+    padding: .5rem;
     text-indent: 2rem; 
     line-height: 2;
 }
@@ -200,10 +201,16 @@ img, video, svg{max-width: 95%; padding-bottom:1rem;}
     width: 95%;
 }
 
+.logos h2{padding-top: 1rem; margin-bottom: 0;}
+
 .a img, .w_s img, .portfolio_ux img, .portfolio_l img{
     display: block;
     margin: 0 auto;
     padding:.25rem;
+}
+
+#ffxiv{
+    padding-bottom: 1rem;
 }
 
 .a{
@@ -215,10 +222,22 @@ img, video, svg{max-width: 95%; padding-bottom:1rem;}
 }
 
 /*ux page*/
-.yale{border-bottom: 1px solid var(--d-line);}
-.portfolio_ux p, .portfolio_a p{padding: 0 2rem;}
+.yale,.pup_il,.ffxiv{border-bottom: 1px solid var(--d-line);}
+.portfolio_ux p, .portfolio_a p{padding: 0 1rem;}
 .project{text-align: center; box-shadow: var(--off-black);}
 .project a{text-align: center; background-color: var(--light-grey); padding:1rem; margin-top: 1rem;}
+
+p.project{
+    text-indent: 0;
+    padding-bottom:1rem;
+}
+
+.pup_il ul{list-style: none; text-align: center; padding:0;}
+
+#yale_mobile video,#yale_tablet video,#yale_desk video{
+    display: block;
+    margin: auto;
+}
 
 /*menu navigation*/
 nav{
@@ -266,6 +285,17 @@ nav ul li a{padding: .75rem .75rem;}
     display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /*For middle size*/
 
 @media screen and (min-width:37.5rem){
@@ -273,18 +303,59 @@ nav ul li a{padding: .75rem .75rem;}
         font-size: 150%;
         line-height: 1.5;
     }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     .portfolio, .portfolio img{
         width:90%;
         display: block;
         margin: auto;
     }
-
+    .image p{
+        padding-top:2rem;
+    }
+    
     #water{
         width:92%;
         display: block;
         margin: auto;
     }
-    .me img{width:50%;}
+
+    #pMobile{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    #pMobile img{
+        width:43.75%;
+        margin:0;
+    }
+
+    #yale_mobile{
+        width:35%;
+    }
+    #yale_tablet{
+        width:55%;
+    }
+
+    #sm_med{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: auto;
+        max-width: 40rem;
+    }
+
+    .a img{
+        padding:1rem;
+    }
+
+    .me img{width:50%;padding-top: 1rem;}
 
     .social ul{
         display: flex;
@@ -316,6 +387,11 @@ nav ul li a{padding: .75rem .75rem;}
         margin: auto;
     }
     
+    .image p{
+        display: block;
+        margin:auto;
+        width:45ch;
+    }
 
     .cd{
         display: flex;
@@ -324,16 +400,32 @@ nav ul li a{padding: .75rem .75rem;}
     }
 
 
-    .l{
+    .l, #ffxiv_icon{
         display: flex;
         flex-direction: row;
     }
     
-    .initial img{
-        max-width: 49%;
+    #ffxiv_class, #ffxiv_job{
+        width: 25rem;
+        margin:auto;
+    }
+
+    .initial img, #ffxiv_icon img{
+        max-width: 25%;
         padding:.5rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /*for large size*/
 
@@ -342,29 +434,70 @@ nav ul li a{padding: .75rem .75rem;}
         font-size: 175%;
         line-height: 1.5;
     }
+
+    
+
     .w_s{display: flex;}
 
-    .me{
-        display:grid;
-        grid-template-columns: 40% 60%;
-        justify-content: stretch;
-        padding-top: 1rem;
+    .res, .ux_h, .hp, .portfolio_h, .abt, .cnt, .arduino_h, .logo_h, .portfolio_h{font-size: 125%; padding-bottom: .75rem;}
+
+    .me,#ffxiv_s{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
     }
-    .me_img{margin: 1rem;}
+    .me img{width: 20rem;padding:1rem;}
     .me_p{
         margin: 0;
-        line-height: 1.5;
-        padding:0 1rem;
+        line-height: 1.5;        
     }
     p{width:75ch;}
     .me_p p{
         margin: 0;
         padding:2rem 0 1rem 0;
+        width:65ch;
+    }
+    
+    #ffxiv_s img{
+        margin:0;
+    }
+    .image p{
+        width:65ch;
+    }
+
+    #fire18, #fire19, #flower18, #flower19, #m18, #people, #bnw, #lake19{
+        display: flex;
+        flex-flow: row wrap;
+        margin:auto;
+        max-width:40rem;
+    }
+
+    #fire18 img, #fire19 img, #flower18 img, #flower19 img, #m18 img, #people img, #bnw img, #lake19 img{
+        width:15rem;
     }
 
     .image img, #water{
         width:25rem;
     }
+
+    #pMobile img{
+        width:12.25rem;
+    }
+
+    #pDesk{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    #pDesk img{
+        margin:0;
+    }
+
+    #yale_desk{
+        max-width:40rem;
+        margin: auto;
+    }
+
     .skill, .skill .cat{padding-bottom: 1rem;}
     #cat{
         list-style: none;
@@ -394,6 +527,11 @@ nav ul li a{padding: .75rem .75rem;}
     #ux, #photo{
         position: relative;
         left:25%;
+    }
+
+    #ffxiv{
+        display: flex;
+        flex-flow: row wrap;
     }
 
     /* 
