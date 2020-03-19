@@ -1,16 +1,18 @@
-# idm231-tu
+# idm222-tu
  
-## Britney Tu
-
-## __*Inspiration*__
-
-### Use same design as previous version
-btudesign.com
+## Britney Tu's Portfolio
 
 
+Pages
+- About
+- Portfolio
+- Resume
+- Contact
 
-Things to change and keep a note of
+email for business question tubritneyk@gmail.com
+
+
+Things to add in the future
 - Add mobile menu animation
 - hover states for portfolio page
-- clean up structure
 

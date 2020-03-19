@@ -356,11 +356,15 @@ nav ul li a{padding: .75rem .75rem;}
         line-height: 1.5;
         padding:0 1rem;
     }
+    p{width:75ch;}
     .me_p p{
         margin: 0;
         padding:2rem 0 1rem 0;
     }
 
+    .image img, #water{
+        width:25rem;
+    }
     .skill, .skill .cat{padding-bottom: 1rem;}
     #cat{
         list-style: none;
