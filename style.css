@@ -39,511 +39,341 @@
     }
 }
 
-html{
-    box-sizing: border-box;
-    background-color: var(--b-back);
-    color: var(--t-color);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:100%;
-    line-height: 1.5;
-    margin: auto;
-    display: block;
-}
+html
+{box-sizing: border-box;
+background-color: var(--b-back);
+color: var(--t-color);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size:100%;
+line-height: 1.5;
+margin: auto;
+display: block;}
 
-.contain{
-    background-color: var(--f-back);
-    border: 5px solid var(--b-back);
-    margin: .75rem;
-    outline:5px solid var(--f-back);
-}
+.contain
+{background-color: var(--f-back);
+border: 5px solid var(--b-back);
+margin: .75rem;
+outline:5px solid var(--f-back);}
 
-a{text-decoration: none;}
+a
+{text-decoration: none;}
 
-header .logo{
-    left:0;
-    position: relative;
-    top:.25rem;
-}
+header .logo
+{left:0;position: relative;top:.25rem;}
 
-header .logo svg, header .logo img{width: 6rem;}
-header .logo a{
-    margin:0;
-    padding:0 0 1rem 0;
-}
+header .logo svg, header .logo img
+{width: 6rem;}
+header .logo a
+{margin:0;
+padding:0 0 1rem 0;}
 
-header{
-    color:var(--h-color);
-    font-weight: bold;
-    text-align: center;
-    padding: .25rem 0;
-}
+header
+{color:var(--h-color);
+font-weight: bold;
+text-align: center;
+padding: .25rem 0;}
 
 
 /*For home page*/
-#introduction{
-    font-style: normal;
-    font-weight: thin;
-    padding: 1rem;
-}
-#introduction h6{text-align: center;}
+#introduction
+{font-style: normal;
+font-weight: thin;
+padding: 1rem;}
+#introduction h6
+{text-align: center;}
 
 /*site wide*/
-p{
-    padding: .5rem;
-    text-indent: 2rem; 
-    line-height: 2;
-}
+p
+{padding: .5rem;
+text-indent: 2rem; 
+line-height: 2;}
+dd
+{line-height: 2;}
+h1, h2, h4, h6, .res a, .ux_h a, .hp a, .portfolio_h a, .abt a, .cnt a, .arduino_h a, .logo_h a, .portfolio_h a, nav a
+{color:var(--h-color);}
+.res, .ux_h, .hp, .portfolio_h, .abt, .cnt, .arduino_h, .logo_h, .portfolio_h
+{text-align: center;
+font-family: var(--h-t-f);
+font-weight: bold;
+background-color: var(--f-back);
+border-bottom: 1px solid var(--d-line);
+padding: .5rem 0 1rem 0;
+position: sticky;
+top: 0;
+z-index: 25;
+margin: 0;}
+img, video, svg
+{max-width: 95%; padding-bottom:1rem;}
 
-dd{line-height: 2;}
-
-h1, h2, h4, h6, .res a, .ux_h a, .hp a, .portfolio_h a, .abt a, .cnt a, .arduino_h a, .logo_h a, .portfolio_h a, nav a{color:var(--h-color);}
-
-.res, .ux_h, .hp, .portfolio_h, .abt, .cnt, .arduino_h, .logo_h, .portfolio_h{
-    text-align: center;
-    font-family: var(--h-t-f);
-    font-weight: bold;
-    background-color: var(--f-back);
-    border-bottom: 1px solid var(--d-line);
-    padding: .5rem 0 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 25;
-    margin: 0;
-}
-
-
-img, video, svg{max-width: 95%; padding-bottom:1rem;}
-
-.github, .yt{
-    width:50px;
-    height:50px;
-}
-.yt{
-    position: relative;
-    top:.5rem;
-}
+/*Social*/
+.github, .yt
+{width:50px;height:50px;}
+.yt
+{position: relative;top:.5rem;}
 /*About page*/
-.me_p{padding: .25rem;}
-.me img{
-    display: block;
-    margin: auto;
-}
+.me_p
+{padding: .25rem;}
+.me img
+{display: block;margin: auto;}
 
 /*contact page*/
-.contact h4, .socialmedia{
-    color: var(--h-color);
-    margin:1rem;
-}
-
-.c_c{
-    padding: 0 1rem;
-}
+.contact h4, .socialmedia
+{color: var(--h-color);margin:1rem;}
+.c_c
+{padding: 0 1rem;}
 
 /*resume*/
-.resume{
-    font-size: .75rem;
-    padding: 1rem;
-}
-
-.basic_info, .resume h2, .resume h4, .portfolio_l h1, .portfolio_l h2, .portfolio_l h3, .portfolio_l h4, .portfolio_l h5, .portfolio_l h6, .portfolio_a h1, .portfolio_ux h1, .portfolio_ux h3, .top, .stool h3{text-align: center;}
-
-.resume div, .resume div dt, .resume div dd{
-    padding-top: .75rem;
-    line-height: 1.5;
-}
-
-.resume h2,  .resume h4{
-    padding-top: 1rem;
-    padding-bottom:0;
-    margin:0;
-}
-
-.resume h4{padding-top: .5rem;}
-.resume dl, .accomplishments ul, .skill ul, .school h5{margin: .5rem 0 .25rem 0;}
-.resume .education ul li, .cat{list-style: none;}
-.accomplishments li{line-height: 2;}
-.cat{padding:.5rem 0;}
-.skill li{line-height: 1.5;}
-.skill{padding-top: 1rem;}
+.resume
+{font-size: .75rem;padding: 1rem;}
+.basic_info, .resume h2, .resume h4, .portfolio_l h1, .portfolio_l h2, .portfolio_l h3, .portfolio_l h4, .portfolio_l h5, .portfolio_l h6, .portfolio_a h1, .portfolio_ux h1, .portfolio_ux h3, .top, .stool h3
+{text-align: center;}
+.resume div, .resume div dt, .resume div dd
+{padding-top: .75rem;
+line-height: 1.5;}
+.resume h2,  .resume h4
+{padding-top: 1rem;padding-bottom:0;margin:0;}
+.resume h4
+{padding-top: .5rem;}
+.resume dl, .accomplishments ul, .skill ul, .school h5
+{margin: .5rem 0 .25rem 0;}
+.resume .education ul li, .cat
+{list-style: none;}
+.accomplishments li
+{line-height: 2;}
+.cat
+{padding:.5rem 0;}
+.skill li
+{line-height: 1.5;}
+.skill
+{padding-top: 1rem;}
 
 /*Portfolio Page*/
-.portfolio img{
-    opacity: .35;
-    display:block;
-    margin: auto;
-}
-
-.portfolio h2{
-    font-family: var(--h-t-f);
-    font-weight: bold;
-    text-shadow: 2px 2px var(--m-color);
-}
-
-.portfolio ul{list-style: none;padding:0;}
-.portfolio main{margin:0 .5rem;}
-.arduino h2, .ux h2, .portfolio .logo h2, .photo h2{
-    font-size: 1.125rem;
-    left: 0;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
-    z-index: 10;
-}
-
-.phoenix p a{text-decoration: underline;}
-.portfolio .logo, .ux, .arduino, .photo{position: relative;}
+.portfolio img
+{opacity: .35;
+display:block;
+margin: auto;}
+.portfolio h2
+{font-family: var(--h-t-f);
+font-weight: bold;
+text-shadow: 2px 2px var(--m-color);}
+.portfolio ul
+{list-style: none;padding:0;}
+.portfolio main
+{margin:0 .5rem;}
+.arduino h2, .ux h2, .portfolio .logo h2, .photo h2
+{font-size: 1.125rem;
+left: 0;
+position: absolute;
+text-align: center;
+top: 50%;
+width: 100%;
+z-index: 10;}
+.phoenix p a
+{text-decoration: underline;}
+.portfolio .logo, .ux, .arduino, .photo, .portfolio_l .logos
+{position: relative;}
 
 /*ai & photo page*/
-.portfolio_l .logos{
-    left: 2.5%;
-    position: relative;
-    width: 95%;
-}
+.portfolio_l .logos
+{left: 2.5%;width: 95%;}
+.logos h2
+{padding-top: 1rem; margin-bottom: 0;}
 
-.logos h2{padding-top: 1rem; margin-bottom: 0;}
+.a img, .w_s img, .portfolio_ux img, .portfolio_l img
+{display: block;
+margin: 0 auto;
+padding:.25rem;}
+.a
+{border-bottom: 1px solid var(--d-line);}
 
-.a img, .w_s img, .portfolio_ux img, .portfolio_l img{
-    display: block;
-    margin: 0 auto;
-    padding:.25rem;
-}
-
-#ffxiv{
-    padding-bottom: 1rem;
-}
-
-.a{
-    border-bottom: 1px solid var(--d-line);
-}
-
-.contain img{
-    width: 90%;
-}
+.contain img
+{width: 90%;}
 
 /*ux page*/
 .yale,.pup_il,.ffxiv{border-bottom: 1px solid var(--d-line);}
 .portfolio_ux p, .portfolio_a p{padding: 0 1rem;}
 .project{text-align: center; box-shadow: var(--off-black);}
 .project a{text-align: center; background-color: var(--light-grey); padding:1rem; margin-top: 1rem;}
+p.project
+{text-indent: 0;padding-bottom:1rem;}
+.pup_il ul
+{list-style: none; text-align: center; padding:0;}
+#ffxiv
+{padding-bottom: 1rem;}
 
-p.project{
-    text-indent: 0;
-    padding-bottom:1rem;
-}
-
-.pup_il ul{list-style: none; text-align: center; padding:0;}
-
-#yale_mobile video,#yale_tablet video,#yale_desk video{
-    display: block;
-    margin: auto;
-}
+#yale_mobile video,#yale_tablet video,#yale_desk video
+{display: block;margin: auto;}
 
 /*menu navigation*/
-nav{
-    background: var(--m-color) ;
-    border-bottom: 1px solid var(--d-line);
-    font-family: var(--h-t-f);
-}
-
-nav ul {
-    font-weight: bold;
-    line-height: 0;
-    margin: 0;
-    padding: .5rem 1rem;
-    text-align: justify;
-  }
-
-nav ul li {
-    list-style: none;
-    line-height: 100%;
-    text-align: center;
-    padding: 1rem;
-}
-
-nav ul li a{padding: .75rem .75rem;}
+nav
+{background: var(--m-color) ;
+border-bottom: 1px solid var(--d-line);
+font-family: var(--h-t-f);}
+nav ul
+{font-weight: bold;
+line-height: 0;
+margin: 0;
+padding: .5rem 1rem;
+text-align: justify;}
+nav ul li
+{list-style: none;
+line-height: 100%;
+text-align: center;
+padding: 1rem;}
+nav ul li a
+{padding: .75rem .75rem;}
 
 /*Pic on the about page*/
-.me img{width: 100%;}
+.me img
+{width: 100%;}
 
 
 /* CSS stuff for the social media tabs */
-.social ul{
-    list-style:none;
-    padding: 2rem 0;
-    
-    display:grid;
-    grid-template-columns: 50px 50px;
-    grid-template-rows: 50px 50px;
-    gap: 3rem 6rem;
+.social ul
+{list-style:none;
+padding: 2rem 0;
 
-    justify-content: center;
-    align-content: center;
-}
+display:grid;
+grid-template-columns: 50px 50px;
+grid-template-rows: 50px 50px;
+gap: 3rem 6rem;
 
-.portfolio li::marker{
-    display: none;
-}
-
-
-
-
-
-
-
-
-
+justify-content: center;
+align-content: center;}
 
 
 
 /*For middle size*/
 
 @media screen and (min-width:37.5rem){
-    html{
-        font-size: 150%;
-        line-height: 1.5;
-    }
+    html
+    {font-size: 150%;
+    line-height: 1.5;}
 
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+    nav ul
+    {display: flex;
+    flex-direction: row;
+    justify-content: center;}
 
-    .portfolio, .portfolio img{
-        width:90%;
-        display: block;
-        margin: auto;
-    }
-    .image p{
-        padding-top:2rem;
-    }
+    .a img
+    {padding:1rem;}
+
+    .me img
+    {width:50%;padding-top: 1rem;}
+
+    .social ul
+    {padding:.5rem;width: 90%;}
+    .social img
+    {padding:0;}
+    .yt
+    {position: relative;top:.25rem;}
+    .social, .social ul
+    {display: flex;justify-content: center;}
+
+    .resume
+    {width: 55ch;margin: auto;}
+    .education .accomplishments ul
+    {display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;}
+    .education .accomplishments ul li
+    {padding:0 2rem;}
     
-    #water{
-        width:92%;
-        display: block;
-        margin: auto;
-    }
-
-    #pMobile{
-        display:flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-
-    #pMobile img{
-        width:43.75%;
-        margin:0;
-    }
-
-    #yale_mobile{
-        width:35%;
-    }
-    #yale_tablet{
-        width:55%;
-    }
-
-    #sm_med{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        margin: auto;
-        max-width: 40rem;
-    }
-
-    .a img{
-        padding:1rem;
-    }
-
-    .me img{width:50%;padding-top: 1rem;}
-
-    .social ul{
-        display: flex;
-        justify-content: center;
-        padding:.5rem;
-        width: 90%;
-    }
-    .social img{ padding:0;}
-    .yt{
-        position: relative;
-        top:.25rem;
-    }
-    .social{
-        display: flex;
-        justify-content: center;
-    }
-
-    .education .accomplishments ul{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-    }
-    .education .accomplishments ul li{
-        padding:0 2rem;
-    }
-
-    .resume{
-        width: 55ch;
-        margin: auto;
-    }
     
-    .image p{
-        display: block;
-        margin:auto;
-        width:45ch;
-    }
+    .image p
+    {display: block;margin:auto;width:45ch;}
 
-    .cd{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .l, #ffxiv_icon{
-        display: flex;
-        flex-direction: row;
-    }
-    
-    #ffxiv_class, #ffxiv_job{
-        width: 25rem;
-        margin:auto;
-    }
-
-    .initial img, #ffxiv_icon img{
-        max-width: 25%;
-        padding:.5rem;
-    }
+    .cd
+    {display: flex;flex-direction: column;align-items: center;}
+    .l, #ffxiv_icon
+    {display: flex;flex-direction: row;}
+    #ffxiv_class, #ffxiv_job
+    {width: 25rem;margin:auto;}
+    .initial img, #ffxiv_icon img
+    {max-width: 25%;padding:.5rem;}
+    .portfolio, .portfolio img
+    {width:90%;display: block;margin: auto;}
+    .image p
+    {padding-top:2rem;}
+    #water
+    {width:92%;display: block;margin: auto;}
+    #pMobile
+    {display:flex;flex-flow: row wrap;justify-content: center;}
+    #pMobile img
+    {width:43.75%;margin:0;}
+    #yale_mobile
+    {width:35%;}
+    #yale_tablet
+    {width:55%;}
+    #sm_med
+    {display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 40rem;}
 }
-
-
-
-
-
-
-
-
-
 
 
 
 /*for large size*/
 
 @media screen and (min-width: 74rem){
-    html{
-        font-size: 175%;
-        line-height: 1.5;
-    }
+    html
+    {font-size: 175%;line-height: 1.5;}
 
-    
+    .w_s
+    {display: flex;}
 
-    .w_s{display: flex;}
+    .res, .ux_h, .hp, .portfolio_h, .abt, .cnt, .arduino_h, .logo_h, .portfolio_h
+    {font-size: 125%; padding-bottom: .75rem;}
 
-    .res, .ux_h, .hp, .portfolio_h, .abt, .cnt, .arduino_h, .logo_h, .portfolio_h{font-size: 125%; padding-bottom: .75rem;}
+    .me,#ffxiv_s,#cat
+    {list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding:0;}
+    .me img
+    {width: 20rem;padding:1rem;}
+    .me_p
+    {margin: 0;line-height: 1.5;}
+    p
+    {width:75ch;}
+    .me_p p
+    {margin: 0;padding:2rem 0 1rem 0;width:65ch;}
 
-    .me,#ffxiv_s{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-    .me img{width: 20rem;padding:1rem;}
-    .me_p{
-        margin: 0;
-        line-height: 1.5;        
-    }
-    p{width:75ch;}
-    .me_p p{
-        margin: 0;
-        padding:2rem 0 1rem 0;
-        width:65ch;
-    }
-    
-    #ffxiv_s img{
-        margin:0;
-    }
-    .image p{
-        width:65ch;
-    }
+    .resume
+    {width: 75ch;margin: auto;}
+    .skill, .skill .cat
+    {padding-bottom: 1rem;}
+    #cat li
+    {padding:0 .5rem;}
+    li.space
+    {padding:0;}
+    .sub_cat
+    {display:flex;flex-flow: column wrap;}
+    dt
+    {position: relative; right:5%;}
 
-    #fire18, #fire19, #flower18, #flower19, #m18, #people, #bnw, #lake19{
-        display: flex;
-        flex-flow: row wrap;
-        margin:auto;
-        max-width:40rem;
-    }
-
-    #fire18 img, #fire19 img, #flower18 img, #flower19 img, #m18 img, #people img, #bnw img, #lake19 img{
-        width:15rem;
-    }
-
-    .image img, #water{
-        width:25rem;
-    }
-
-    #pMobile img{
-        width:12.25rem;
-    }
-
-    #pDesk{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-    #pDesk img{
-        margin:0;
-    }
-
-    #yale_desk{
-        max-width:40rem;
-        margin: auto;
-    }
-
-    .skill, .skill .cat{padding-bottom: 1rem;}
-    #cat{
-        list-style: none;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        padding:0;
-    }
-    #cat li{padding:0 .5rem;}
-    li.space{padding:0;}
-    .sub_cat{
-        display:flex;
-        flex-flow: column wrap;
-    }
-    .resume{
-        width: 75ch;
-        margin: auto;
-    }
-
-    .portfolio{
-        width:30rem;
-    }
-    #ard, #logo{
-        position: relative;
-        right:25%;
-    }
-    #ux, #photo{
-        position: relative;
-        left:25%;
-    }
-
-    #ffxiv{
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    /* 
-        add a div and a flex box
-
-        #water, .a img{
-        width:50%;
-    } */
-
-    dt{
-        position: relative;
-        right:5%;
-    }
+    .portfolio
+    {width:30rem;}
+    #ard, #logo
+    {position: relative;right:25%;}
+    #ux, #photo
+    {position: relative; left:25%;}
+    #ffxiv,#fire18, #fire19, #flower18, #flower19, #m18, #people, #bnw, #lake19,#pDesk
+    {display: flex; flex-flow: row wrap; justify-content: center;}
+    #ffxiv_s img, #pDesk img
+    {margin:0;}
+    .image p
+    {width:65ch;}
+    #fire18, #fire19, #flower18, #flower19, #m18, #people, #bnw, #lake19, #yale_desk
+    {margin:auto; max-width:40rem;}
+    #fire18 img, #fire19 img, #flower18 img, #flower19 img, #m18 img, #people img, #bnw img, #lake19 img
+    {width:15rem;}
+    .image img, #water
+    {width:25rem;}
+    #pMobile img
+    {width:12.25rem;}
 
 }
