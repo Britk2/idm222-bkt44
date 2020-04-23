@@ -79,6 +79,8 @@ padding: .25rem 0;}
 {font-style: normal;
 font-weight: thin;
 padding: 1rem;}
+#introduction p
+{margin:auto;}
 #introduction h6
 {text-align: center;}
 
